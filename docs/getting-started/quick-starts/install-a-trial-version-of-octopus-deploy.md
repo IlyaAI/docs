@@ -63,7 +63,7 @@ The web portal is where you configure your infrastructure, define your release p
 
 * Log onto the Octopus Web Portal at [http://localhost:80/](http://localhost:80/) using the username and password you created during installation.
 
-![Octopus Dashboard](dashboard.md "width=500")
+![Octopus Dashboard](dashboard.png "width=500")
 
 The Octopus Dashboard gives an overview of the basic Octopus workflow. Take a few minutes to read through the information.
 

@@ -4,7 +4,7 @@ position: 3
 description: How to deploy your first Java web app with Octopus Deploy.
 ---
 
-You can use Octopus Deploy to deploy Java web apps files to your web app server. In this quick-start we’ll deploy a Java war file from the built-in Octopus Deploy Library to Apache Tomcat. We’ll run through the following steps:
+You can use Octopus Deploy to deploy Java web apps to your web app server. In this quick-start we’ll deploy a Java war file from the built-in Octopus Deploy Library to Apache Tomcat. We’ll run through the following steps:
 
 1. Applying the versioning scheme.
 1. Uploading the app to the built-in Octopus repository.
@@ -23,7 +23,7 @@ To complete this quick-start you need:
 * Access to a working instance of [Octopus Deploy](/docs/getting-started/quick-start/install-a-trial-version-of-octopus-deploy.md).
 * A machine running:
 	* [Octopus Tentacle](/docs/getting-started/quick-start/configure-your-infrastructure.md).
-	* A Java web app server.
+	* A running instance of TomCat.
 * A sample war file to deploy.
 
 ### Upload the app to the Octopus Deploy Library
@@ -33,11 +33,11 @@ To complete this quick-start you need:
 1. Apply the version number 0.0.1 to the war file. For instance, octopus-0.0.1.war.
 1.  If you’re not already logged into the **Octopus Web Portal** do so now, and navigate to the **Library** and select **Packages**.
 
-	![library packages](library-packages.png width="500")
+![library packages](library-packages.png width="500")
 
 1. Click **Upload packages** and browse to the file you want to upload and click **Upload**.
 
-Octopus will give the package an ID based on the filename you uploaded. In our example, *octopus-0.0.1.war* the package ID is *octopus-0*.  
+Octopus will give the package an ID based on the filename you uploaded. In our example, *octopus.0.0.1.war* the package ID is *octopus*.  
 
 
 ### Define a project
@@ -57,7 +57,7 @@ A deployment process specifies the steps to deploy an application. Here we'll de
 	![Deploy Java archive](deploy-java-archive.png width="500")
 1. Name the step. For instance, *Deploy archive*.
 1. Select roles under **Runs on targets in role**. We defined this as *Test-server* when we configured our test infrastructure.
-1. Select the **Package-ID**. This will autocomplete when you start to type. The package ID in our example is *octopus-0*.
+1. Select the **Package-ID**. This will autocomplete when you start to type. The package ID in our example is *octopus*.
 1. Tick **Custom Deploy Directory** and add the path to the web app directory in your server. For instance, *C:Users\test\Desktop\tomcat\webapps*.
 1. For the **Deployed Package File Name** we need to enter the name of the war file without the version number. This ensures the path to the web app doesn’t change with every new release. For instance, *octopus.war*.
 1. **Save** the process.  
@@ -82,11 +82,11 @@ A deployment process specifies the steps to deploy an application. Here we'll de
 In this step, we’ll update the app and upload it to the built-in repository ready to be deployed.
 
 1. Edit the war file to include a change. For instance, add the string *Version 0.0.2*.
-2. Increment the version number in the filename: *octopus-0.0.2.war*.
+2. Increment the version number in the filename: *octopus.0.0.2.war*.
 3. Upload the new file to the **Octopus Deploy Library**. From the **Library** page, select **Packages**, and click **Upload package**.
-4. Browse to the file *octopus-0.0.2.war* and click **upload**.
+4. Browse to the file *octopus.0.0.2.war* and click **upload**.
 
-Note, on the packages page, the latest version for the package *octopus-0* is now **0.2**.
+Note, on the packages page, the latest version for the package *octopus* is now **0.2**.
 
 ### Create the next release and deploy
 

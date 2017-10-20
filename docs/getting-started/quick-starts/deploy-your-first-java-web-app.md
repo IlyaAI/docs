@@ -21,8 +21,8 @@ We recommend that you configure your existing build tool to push packages automa
 To complete this quick-start you need:
 
 * Access to a working instance of [Octopus Deploy](/docs/getting-started/quick-start/install-a-trial-version-of-octopus-deploy.md).
-* A machine running:
-	* [Octopus Tentacle](/docs/getting-started/quick-start/configure-your-infrastructure.md).
+* A machine with:
+	* [Octopus Tentacle installed](/docs/getting-started/quick-start/configure-your-infrastructure.md).
 	* A running instance of TomCat.
 	* Java 1.8 installed.
 * A sample war file to deploy.

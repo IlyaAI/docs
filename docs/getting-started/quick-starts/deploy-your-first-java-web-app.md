@@ -66,7 +66,9 @@ A deployment process specifies the steps to deploy an application. Here we'll de
 
 1. Click **Create release** from the projects dashboard.
 1. The details for the process are automatically filled in on the create release screen.
+
 ![Create release](create-release.png width="500")
+
 1.  Add a note for the release notes, and click **save**.
 
 ### Deploy the release

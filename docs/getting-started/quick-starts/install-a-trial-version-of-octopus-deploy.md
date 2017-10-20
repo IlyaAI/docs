@@ -4,7 +4,7 @@ position: 1
 description: How to install a trial version of Octopus Deploy.
 ---
 
-This section walks you through setting up your trial version of Octopus Deploy on Windows 10. In this quick-start, we will install:
+This section walks you through setting up your trial version of Octopus Deploy on Windows Server 2016. In this quick-start, we will install:
 
 * Octopus Deploy Server
 * SQL Server Database

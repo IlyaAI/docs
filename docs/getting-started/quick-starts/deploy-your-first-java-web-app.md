@@ -24,6 +24,7 @@ To complete this quick-start you need:
 * A machine running:
 	* [Octopus Tentacle](/docs/getting-started/quick-start/configure-your-infrastructure.md).
 	* A running instance of TomCat.
+	* Java 1.8 installed.
 * A sample war file to deploy.
 
 ### Upload the app to the Octopus Deploy Library

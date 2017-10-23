@@ -38,8 +38,7 @@ To complete this quick-start you need:
 
 1. Click **Upload packages** and browse to the file you want to upload and click **Upload**.
 
-Octopus will give the package an ID based on the filename you uploaded. In our example, *octopus.0.0.1.war* the package ID is *octopus*.  
-
+Octopus will give the package an ID based on the filename you uploaded. In our example, *Octopus.0.0.1.war* the package ID is *Octopus*.
 
 ### Define a project
 
@@ -83,11 +82,11 @@ A deployment process specifies the steps to deploy an application. Here we'll de
 In this step, we’ll update the app and upload it to the built-in repository ready to be deployed.
 
 1. Edit the war file to include a change. For instance, add the string *Version 0.0.2*.
-2. Increment the version number in the filename: *octopus.0.0.2.war*.
+2. Increment the version number in the filename: *Octopus.0.0.2.war*.
 3. Upload the new file to the **Octopus Deploy Library**. From the **Library** page, select **Packages**, and click **Upload package**.
-4. Browse to the file *octopus.0.0.2.war* and click **upload**.
+4. Browse to the file *Octopus.0.0.2.war* and click **upload**.
 
-Note, on the packages page, the latest version for the package *octopus* is now **0.2**.
+Note, on the packages page, the latest version for the package *Octopus* is now **0.0.2**.
 
 ### Create the next release and deploy
 

@@ -1,0 +1,1 @@
+| MyCertificate.SubjectCommonName | The common-name portion of the subject                 | *.google.com 

@@ -30,7 +30,8 @@ At deploy-time, Certificate variables are expanded. For example, a variable _MyC
 | MyCertificate.PrivateKey        | The base64 encoded DER ASN.1 private key.              | 
 | MyCertificate.CertificatePem    | The PEM representation of the certificate (i.e. the PublicKey with header\footer).  | 
 | MyCertificate.PrivateKeyPem     | The PEM representation of the private key (i.e. the PrivateKey with header\footer).  | 
-| MyCertificate.Subject           | The X.500 distinguished name of the subject            | 
+| MyCertificate.Subject           | The X.500 distinguished name of the subject            | CN=*.google.com,O=Google Inc,L=Mountain View,ST=California,C=US
+!partial <subjectcommonname>
 | MyCertificate.Issuer            | The X.500 distinguished name of the issuer             | 
 | MyCertificate.NotBefore         | NotBefore date | 2016-06-15T13:45:30.0000000-07:00
 | MyCertificate.NotAfter         | NotAfter date | 2019-06-15T13:45:30.0000000-07:00
